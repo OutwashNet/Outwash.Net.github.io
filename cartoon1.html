@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Outwash.net</title>
+<meta name="viewport"content="width=device-width,initial-scale=1"/>
+ <style type="text/css">
+*{
+ box-sizing:border-box;
+}
+html,body{
+         margin:0px;
+         padding:0px;
+}
+
+ header{
+      background-image:linear-gradient(yellow 40%,blue 20%);
+      width:100%;
+      height:110px;
+      position:fixed;
+      top:0%;
+      z-index:1;
+}
+  body{
+      background-color:white;
+      background-attachment:scroll;
+}     
+div.cartoonmovies{
+           background-size:100%;
+           background-color:yellow;
+           background-image:linear-gradient(blue,red,red,purple,red,lime,lime,red,purple,lime,cyan,cyan,green);
+           -webkit-background-clip:text;
+           -webkit-text-fill-color:transparent;
+           -moz-background-clip:text;
+           -moz-text-fill-color:transparent;
+           text-shadow:5px 0px yellow;
+           font-weight:bolder;
+           font-size:50px;
+           font-style:italic;
+           position:relative;
+           top:25px;
+} 
+h1.outwash{
+          background-size:100%;
+          background-color:yellow;
+          background-image:linear-gradient(red,blue,green,red,yellow,red,yellow,red,red,red,yellow,red,red);
+          -webkit-background-clip:text;
+          -webkit-text-fill-color:transparent;
+          -moz-background-clip:text;
+          -moz-text-fill-color:transparent;
+          font-weight:bolder;
+          font-size:40px;
+          padding-top:80px;
+          text-shadow:4px 0px yellow;
+          text-decoration:underline red wavy;
+          font-style:italic;
+} 
+a.link{
+      font-weight:bolder;
+      font-size:30px;
+      color:blue;
+      text-decoration:none;
+}
+a.cartoon{
+         font-size:50px;
+         display:block;
+        background-size:100%;
+          background-color:yellow;
+          background-image:linear-gradient(yellow 50%,blue 50%);
+          -webkit-background-clip:text;
+          -webkit-text-fill-color:transparent;
+          -moz-background-clip:text;
+          -moz-text-fill-color:transparent;
+          font-weight:bolder;
+          text-shadow:5px 0px blue;
+          text-decoration:none;
+          clear:both;
+}
+img{
+   width:500px;
+   height:200px;
+   float:left;
+   margin-bottom:5px;
+}
+#outwash{
+      color:blue;
+      font-weight:bolder;
+      font-size:20px;
+      position:relative;
+      bottom:25%;
+      float:right;
+      border:solid blue 8px;
+      border-top-style:double;
+      border-right-style:double;
+      border-radius:50px;
+      outline-color:yellow;
+      background:yellow;
+      clear:both;
+}
+#net{
+     display:block;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="index.html"class="link">←</a>
+<div class="cartoonmovies">Download Outwash Cartoon Movies</div>
+<input type="text"name="search"id="outwash"onkeyup="myFunc()"placeholder="Search Outwash..."/>
+</header>
+<h1 class="outwash">Cartoon</h1>
+<main id="net">
+<a href="OVERWATCH.html"class="cartoon">
+<img src="C:/Users/user/Pictures/0.jpg"/>
+OVERWATCH
+</a>
+<a href="Star Dog And Turbo cat.html"class="cartoon">
+<img src="C:/Users/user/Pictures/stardog.jpg"/>
+Star Dog And Turbo cat
+</a>
+<a href="Killer Bean Forever.html"class="cartoon">
+<img src="C:/Users/user/Pictures/maxre.jpg"/>
+Killer Bean Forever  - Official Full Movie
+</a>
+<a href="Fox and the hound.html"class="cartoon">
+<img src="C:/Users/user/Pictures/fox_and_the_hound_ver1.jpg"/>
+fox_and_the_hound
+</a>
+<a href="Tom and jerry in new york.html"class="cartoon">
+<img src="C:/Users/user/Pictures/Whatsapp-image-2021-09-22-at-12.41.48.jpg"/>
+Tom_And_jerry_In_New York
+</a>
+<a href="Tom and Jerry 2018(Outwash.net)Ma Ma _ Cartoon For Kids.html"class="cartoon">
+<img src="C:/Users/user/Pictures/hqdefault(0).jpg"/>
+Tom and Jerry||2018||Ma Ma_Cartoon_For_Kids
+</a>
+</main>
+<script type="text/javascript">
+function myFunc(){
+             let input=document.getElementById("outwash").value;
+             input=input.toLowerCase();
+             let x=document.getElementsByClassName("cartoon");
+for(i=0;i<x.length;i++){
+     if(!x[i].innerHTML.toLowerCase().includes(input)){
+       x[i].style.display="none";
+}else{
+     x[i].style.display="block";
+            }
+       }
+}
+</script>
+</body>
+</html>
